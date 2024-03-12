@@ -1,0 +1,302 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+}
+
+#left {
+    width: 50vw;
+    height: 100vh;
+    padding: 40px;
+    margin: 0px 20px;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+#heading {
+    margin-bottom: 100px;
+}
+
+#left h1 {
+    font-size: 8.5vw;
+    font-weight: 500;
+    line-height: 10.5vw;
+}
+
+#left-center {
+    cursor: pointer;
+
+    margin: 15px;
+    width: fit-content;
+    border-radius: 50px;
+    display: flex;
+    border: 1px solid #dadada;
+}
+
+#left-center h4 {
+    margin: 5px 15px;
+    font-weight: 600;
+
+
+}
+
+#color1 {
+    padding: 10px;
+    background-color: red;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+#color2 {
+    padding: 10px;
+    background-color: rgb(5, 11, 168);
+    border-radius: 50%;
+    margin: 5px;
+
+}
+
+#left-bottom {
+    width: 60%;
+
+}
+
+#left-bottom h4 {
+    font-size: 25px;
+    margin: 15px;
+}
+
+#left-bottom p {
+    color: #000000;
+}
+
+#right {
+    width: 50vw;
+    height: 100vh;
+    padding: 40px;
+    margin: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#right img {
+    object-fit: cover;
+    height: 60%;
+
+    border-radius: 10px;
+}
+
+#price {
+    display: flex;
+    justify-content: space-evenly;
+
+    width: 50%;
+    margin: 5px 10px;
+}
+
+#price i {
+    color: gold;
+}
+
+#add-cart {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 35%;
+    left: 57%;
+    cursor: pointer;
+    font-weight: 500;
+   
+   
+    
+}
+#add-cart::after{
+    content: "";
+    width: 0%;
+    height: 0%;
+    border-radius: 50%;
+    background-color: rgb(0, 247, 255);
+    
+    object-fit: cover;
+    position: absolute;
+    transition: all  linear 0.5s ;
+    opacity: 0.4;
+   
+}
+
+#add-cart:hover::after{
+    width: 100%;
+    height: 100%;
+    
+    
+    
+}
+#add-cart:hover{
+   
+    
+    
+    scale: 1.2;
+}
+
+#add-cart h2 {
+    font-size: 14px;
+}
+
+#right h3 {
+    rotate: -90deg;
+    transform-origin: 0 0;
+    position: absolute;
+    top: 79%;
+    left: 28%;
+    font-size: 3.5vh;
+    text-transform: capitalize;
+}
+
+/* using media qurey for responsive design */
+
+@media (max-width:600px) {
+    #main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #left {
+        width: 70vw;
+
+
+
+    }
+
+    #heading {
+        margin-bottom: 150px;
+    }
+
+    #left h1 {
+        font-size: 16.5vw;
+
+        line-height: 14.5vw;
+    }
+
+    #left-center {
+        margin: 25px;
+
+
+    }
+
+    #left-center h4 {
+        margin: 5px 15px;
+        font-weight: 600;
+
+
+    }
+
+    #color1 {
+        padding: 10px;
+        background-color: red;
+        border-radius: 50%;
+        margin: 5px;
+    }
+
+    #color2 {
+        padding: 10px;
+        background-color: rgb(5, 11, 168);
+        border-radius: 50%;
+        margin: 5px;
+
+    }
+
+    #left-bottom {
+        width: 60%;
+
+    }
+
+    #left-bottom h4 {
+        font-size: 25px;
+        margin: 25px;
+    }
+
+    #left-bottom p {
+        color: #000000;
+        font-size: 15px;
+    }
+
+    #right {
+        width: 70vw;
+       
+      
+    }
+
+    #right img {
+      
+        height: 80%;
+
+      
+    }
+
+  
+
+    
+
+    #add-cart {
+
+        top: 29%;
+        left: 59%;
+
+    }
+
+   
+    #right h3 {
+       
+        top: 79%;
+        left: 15%;
+        font-size: 3.5vh;
+        
+    }
+
+
+
+}
+
+@media (max-width:523px) {
+    #price{
+        width: 100%;
+    }
+    
+    #right h3 {
+       
+        top: 79%;
+        left: 0%;
+        font-size: 3.5vh;
+        
+    }
+    #add-cart {
+
+       
+        left: 66%;
+
+    }
+}
