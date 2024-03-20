@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+ 
+   
+}
+#main{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: relative;
+    
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 2px solid red; */
+    padding: 0px 15px;
+height: 9.5vh;
+
+}
+nav h1{
+    font-size: 4.5vh;
+    font-weight: 100;
+    text-transform: capitalize;
+
+}
+#nav-left{
+    display: flex;
+    gap: 3vh;
+
+
+   
+ 
+
+}
+
+#nav-left h1{
+    font-size: 3.5vh;
+    font-weight: 400;
+    text-transform: capitalize;
+
+}
+
+#center{
+    width: 80%;
+    height: 80%;
+    /* background-color: blue; */
+    margin: auto;
+    position: relative;
+   
+
+}
+
+#center h1{
+    color: #fff;
+    font-size: 8.5vw;
+    font-weight: 400;
+    text-transform: capitalize;
+    z-index: 9;
+    position: relative;
+
+  
+    /* background-color: red; */
+  
+
+
+}
+
+#center h1:nth-child(2){
+   
+    /* background-color: red; */
+    justify-content: center;
+    display: flex;
+}
+
+#center h1:nth-child(3){
+   
+    /* background-color: red; */
+    justify-content: center;
+    display: flex;
+}
+
+#center img{
+    width: 20%;
+    height: 65%;
+    object-fit: cover;
+    position: absolute;
+    top: 12%;
+    left: 40%;
+    
+  
+}
+
+#img1{
+    rotate: 8deg;
+}
+
+#img2{
+    rotate: 15deg;
+}
+
+
+@media (max-width:600px) {
+
+   
+nav h1{
+    font-size: 2.5vh;
+   
+   
+
+}
+
+#nav-left h1{
+    font-size: 2.5vh;
+   
+
+}
+
+
+#center{
+  
+    /* background-color: blue; */
+   
+    padding: 3.5vh 0.5vh;
+   
+
+}
+
+#center h1{
+  margin: 1.5vh 2.5vh;
+    font-size: 10.5vh;
+    font-weight: 200;
+line-height: 7.5vh;
+    z-index: 10;
+    mix-blend-mode:difference;
+
+  
+
+  
+   
+  
+
+
+}
+
+
+
+#center img{
+    width: 40%;
+    height: 55%;
+    object-fit: cover;
+    position: absolute;
+    top: 12%;
+    left: 40%;
+    
+  
+}
+
+#img1{
+    rotate: 8deg;
+}
+
+#img2{
+    rotate: 15deg;
+}
+
+}
