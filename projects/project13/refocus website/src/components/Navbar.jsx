@@ -5,7 +5,7 @@ function Navbar() {
     return (
         <div>
 
-            <nav className=' max-w-screen-xl py-5 px-2 mx-auto text-zinc-50  flex  border-b-2 border-zinc-700 items-center justify-between  '>
+            <nav className=' max-w-screen-xl py-5 px-2 mx-auto text-zinc-50  flex  border-b-2 border-zinc-700 items-center justify-center gap-20   '>
                 <img src="https://assets-global.website-files.com/6334198f239547d0f9cd84b3/63349803431f1562dccf1802_refokus%20logo.svg" alt="" srcset="" />
                 {["Home", "work", "", "News"].map((elem, index) => {
                     return (
