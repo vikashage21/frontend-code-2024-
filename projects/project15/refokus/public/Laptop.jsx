@@ -19,6 +19,7 @@ export default function Model(props) {
         <mesh geometry={nodes.Cube002_Keys_0.geometry} material={materials.Keys} />
       </group>
       <mesh geometry={nodes.Cube000_Laptop_0.geometry} material={materials.Laptop} position={[133.663, 0, -500.445]} rotation={[-Math.PI / -0.59, 0.22, -0.551]} />
+      
     </group>
   )
 }

@@ -1,25 +1,34 @@
-import { useState, Suspense } from 'react'
 
 import './App.css'
+import './index.css'
+
+import Navbar from './components/Navbar'
 import { Canvas } from '@react-three/fiber'
 import { OrbitControls } from '@react-three/drei'
 import Laptop from '../public/Laptop'
+import { useState, Suspense } from 'react'
+import Works from './components/Works'
+import Stripes from './components/Stripes'
+
 
 
 function App() {
-  const [count, setCount] = useState(0)
+  
 
   return (
     <>
-      <Canvas>
+    <Navbar/>
+      {/* <Canvas >
         <ambientLight intensity={6} />
-        <OrbitCgitontrols />
+        <OrbitControls />
         <Suspense fallback={null}>
           <Laptop  />
         </Suspense>
 
-      </Canvas>
+      </Canvas> */}
 
+      <Works  /> 
+      <Stripes/>
     </>
   )
 }
